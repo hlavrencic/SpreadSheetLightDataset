@@ -34,7 +34,7 @@ Supongamos el caso en el que tenemos que insertar el detalle de las compras, en 
 |Ya se completó la tabla de clientes, ahora debería completarse la tabla de compras|Cuando el proceso intente completar la compras y agregue nuevas columnas, estará afectando la tabla de clientes.|
   
   
-  
+### Inserción y desplazamiento
 Para solucionar este problema, en lugar de insertar columnas, lo que debemos hacer es desplazar las celdas hacia la derecha, a medida que vamos agregando nueva información.
 |![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/648b6a5b-92fd-41db-aeb4-de98c9dd1058.png)|![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/34c80d84-aa10-48b4-8d60-bd0e338fc3e8.png)|
 |--|--|
