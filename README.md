@@ -39,14 +39,6 @@ Para solucionar este problema, en lugar de insertar columnas, lo que debemos hac
 |![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/648b6a5b-92fd-41db-aeb4-de98c9dd1058.png)|![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/34c80d84-aa10-48b4-8d60-bd0e338fc3e8.png)|
 |--|--|
 
-## Diagrama técnico
-
-![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/diagrama1.png) 
- 
- 
-  
-   
-   
    
 # Generar datos y comportamientos de escritura
 
@@ -132,3 +124,8 @@ IDataAliasWriter rango = filas.ToRangeData("alias3");
 ```
 
 Todos los metodos estaticos tienen una sobrecarga que permite ingresar el alias.
+
+
+## Diagrama técnico
+
+![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/diagrama1.png) 
