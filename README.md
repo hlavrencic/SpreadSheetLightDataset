@@ -20,25 +20,34 @@ Recibe un set de datos y los impacta en un Excel existente agregando filas de fo
 Recibe un set de datos y los impacta en un Excel existente agregando filas y columnas de forma dinamica según la cantidad de filas y columnas insertadas.
 
 ![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/6cfe289f-7f10-468a-a685-4e940b44667f.png)
+  
  
-
+ 
 ## Desplazamiento de datos
 Existen casos en los que vamos a necesitar dezplazar el contenido de una fila a la derecha, en lugar de insertar nuevas columnas. Ya que, al insertar nuevas colunmas, estamos afectando a toda la hoja y puede que estemos afectando a otras celdas, por encima o debajo, de la que queremos editar.
-
+ 
+ 
+ 
 Supongamos el caso en el que tenemos que insertar el detalle de las compras, en el siguiente template:
 |![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/7c670c16-fcb5-4931-94de-e7d107da387b.png)|![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/4baded35-2ff3-4d87-8398-fb019bf9dd33.png)|
 |--|--|
 |Ya se completó la tabla de clientes, ahora debería completarse la tabla de compras|Cuando el proceso intente completar la compras y agregue nuevas columnas, estará afectando la tabla de clientes.|
-
-
+  
+  
+  
 Para solucionar este problema, en lugar de insertar columnas, lo que debemos hacer es desplazar las celdas hacia la derecha, a medida que vamos agregando nueva información.
 |![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/648b6a5b-92fd-41db-aeb4-de98c9dd1058.png)|![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/34c80d84-aa10-48b4-8d60-bd0e338fc3e8.png)|
 |--|--|
 
 ## Diagrama técnico
 Tool.SpreadSheet
-
-
+ 
+ 
+ 
+  
+   
+   
+   
 # Generar datos y comportamientos de escritura
 
 ## Objeto Celda
