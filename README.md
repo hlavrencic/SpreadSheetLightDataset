@@ -1,6 +1,4 @@
-# SpreadSheetLightDataset
-
-## Uso del Alias o Nombres de rango 
+# Uso del Alias o Nombres de rango 
 Utiliza los Alias o Nombres de celda para relacionar un set de datos con la posición en la que debe incluirse:
 
 
