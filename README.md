@@ -4,7 +4,8 @@
 Utiliza los Alias o Nombres de celda para relacionar un set de datos con la posición en la que debe incluirse:
 
 
-
+|![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/89a79e37-af02-42ad-802b-e55ea5db8bb0.png)|![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/58b803fd-b996-4e42-b083-8f51e4dc9c74.png)|
+|--|--|
  
 
  
