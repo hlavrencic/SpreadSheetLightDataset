@@ -52,3 +52,89 @@ SpreadSheet - Generar datos y comportamientos de escritura
 
 ## Diagrama técnico
 Tool.SpreadSheet
+
+
+# Generar datos y comportamientos de escritura
+
+## Objeto Celda
+Todo dato que desee volcarse a la planilla debe ser convertido en Celda. Para eso debe utilizarse el helper .ToCell()
+
+Ejemplo:
+```csharp
+DateTime fecha;
+IDataWriter celda = fecha.ToCell();
+```
+
+Cualquier tipo de dato puede ser convertido en celda:
+```csharp
+double precio;
+IDataWriter celda = precio.ToCell();
+```
+Cada celda conservará su tipo de origen e impactará el valor como corresponda.
+
+## Objeto Fila
+Una lista de celdas puede agruparse en una fila. Que luego se escribira como tal en la planilla.
+
+Ejemplo:
+```csharp
+IEnumerable<IDataWriter> celdas;
+IRowData fila = celdas.ToRowData();
+```
+ 
+## Objeto Rango
+
+Una lista de filas puede agruparse en un rango:
+```csharp
+IEnumerable<IRowData> filas;
+RangeData rango = filas.ToRangeData();
+```
+ 
+También es posible crear un rango a partir de una lista de listas de celdas:
+```csharp
+IEnumerable<IEnumerable<IDataWriter>> celdas;
+RangeData rango = celdas.ToRangeData();
+```
+
+## Filas y rangos con comportamiento
+Para insertar nuevas filas antes de escribir la información:
+
+```csharp
+IEnumerable<IEnumerable<IDataWriter>> celdas;
+RangeData rango = celdas.ToDynamicRangeData();
+```
+
+Para crear una fila de celdas que va insertando nuevas columnas a medida que escribe la información:
+```csharp
+IEnumerable<IDataWriter> celdas;
+DynamicRowData rango = celdas.ToDynamicRowData();
+```
+
+Para crear una fila o rango de celdas que vaya desplazando celdas a la derecha a medida que inserta nueva información:
+```csharp
+IEnumerable<IDataWriter> celdas;
+ShiftRowData rango = celdas.ToShiftRowData();
+```
+
+## Para rangos:
+
+```csharp
+IEnumerable<IEnumerable<IDataWriter>> filas;
+RangeData rango = filas.ToShiftRangeData();
+```
+
+## Asociar alias
+Para que una celda, fila o rango pueda escribirse en un excel, debe asociarse a un alias:
+
+```csharp
+// Celda
+DateTime fecha;
+IDataAliasWriter celda = fecha.ToCell("alias1");
+
+//Fila
+IDataAliasWriter fila = celdas.ToRowData("alias2"); 
+
+//Rango
+IDataAliasWriter rango = filas.ToRangeData("alias3");
+```
+
+Todos los metodos estaticos tienen una sobrecarga que permite ingresar el alias.
