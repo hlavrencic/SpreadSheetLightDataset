@@ -40,8 +40,8 @@ Para solucionar este problema, en lugar de insertar columnas, lo que debemos hac
 |--|--|
 
 ## Diagrama técnico
-Tool.SpreadSheet
- 
+
+![](https://raw.githubusercontent.com/hlavrencic/SpreadSheetLightDataset/master/doc/img/Captura de pantalla 2020-10-23 095332.png) 
  
  
   
